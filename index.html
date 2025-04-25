@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Responsive viewport meta tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Yogesh Rebari Portfolio</title>
+    <meta name="description" content="Portfolio of Yogesh Rebari - Data Scientist and Machine Learning Engineer">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style1.css">
+    <!-- Font Awesome for icons -->
+    <script src="https://kit.fontawesome.com/41c984c846.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Loading Screen -->
+    <div class="loader-wrapper">
+        <div class="loader">
+            <div class="loader-circle"></div>
+            <div class="loader-content">
+                <div class="loader-name">YR</div>
+                <div class="loader-progress">
+                    <div class="loader-bar"></div>
+                </div>
+                <div class="loader-text">Loading...</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <header id="header" style="opacity: 0;">
+        <div class="container">
+            <!-- Navigation -->
+            <nav>
+                <!-- Logo -->
+                <div class="logo">
+                    <div class="logo-text">
+                        <span class="logo-letter">Y</span>
+                        <span class="logo-letter">R</span>
+                        <div class="logo-subtitle">Portfolio</div>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="menu-btn" onclick="toggleMenu()">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+
+                <!-- Navigation Links -->
+                <ul id="sidemenu">
+                    <li><a href="#header" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <!-- Dark Mode Toggle -->
+                    <li class="toggle-list-item">
+                        <div class="theme-switch-wrapper">
+                            <label class="theme-switch" for="checkbox">
+                                <input type="checkbox" id="checkbox" />
+                                <div class="slider round"></div>
+                                <span class="icon-sun"><i class="fa-solid fa-sun"></i></span>
+                                <span class="icon-moon"><i class="fa-solid fa-moon"></i></span>
+                            </label>
+                        </div>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Header Content -->
+            <div class="header-text">
+                <p class="typing-text fade-in">Data Scientist | ML Engineer</p>
+                <h1 class="slide-up">Hi, I'm <span>Yogesh Rebari</span></h1>
+                <div class="role-description slide-up">
+                    <p>Transforming Data into Insights</p>
+                    <div class="tech-stack">
+                        <span class="tech-item">Python</span>
+                        <span class="tech-item">Machine Learning</span>
+                        <span class="tech-item">Deep Learning</span>
+                        <span class="tech-item">NLP</span>
+                        <span class="tech-item">SQL</span>
+                        <span class="tech-item">Java</span>
+                        <span class="tech-item">Data Structure</span>
+                    </div>
+                    <div class="stats-container">
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">ML Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Years Coding</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">AI Models</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!------------about------------>
+    <div id="about" style="opacity: 0;">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/background1.png.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am an undergraduate student pursuing a degree in Computer Science Engineering with a strong foundation in programming, software development, and problem-solving. My academic journey has equipped me with skills in Java, Python, Machine Learning and Deep Learning as well as experience in Full stack development.</p>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>AI&ML</span><br>Machine Learning</li>
+                            <li><span>Web development</span><br>Full-Stack Development</li>
+                            <li><span>Database</span><br>SQL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>AI&ML Intern(Remote)</span><br>AICTE Online Internships(Dec-Feb,2024)</li>
+                            <li><span>Info Bharat Intern</span><br>Web Development(Feb-Mar,2025)</li>
+                            <li><span>Freelancing</span><br>Web Designing and Development</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2019 - 2021</span><br>PUC-Science(PCMB) from The Grand Atria PU College</li>
+                            <li><span>2022 - 2026</span><br>Bechlor of Engineering from CIT Tumkur</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <a href="#" class="btn btn2" onclick="openResume()">View Resume</a>
+                    <a href="page2.html" class="btn btn2">View Certificates</a>
+                    <a href="page3.html" class="btn btn2">View Projects</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------services----------->
+    <div id="services" style="opacity: 0;">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Software developer</h2>
+                    <p>programming languages are : Java and Python</p>
+                    <a href="page3.html">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Web Design</h2>
+                    <p>Frontend development using HTML,CSS JavaScript</p>
+                    <a href="page3.html">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>AI&ML</h2>
+                    <p>Machine Learning, NLP, Deep Learning</p>
+                    <a href="page3.html">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-----------portfolio---------->
+    <div id="portfolio" style="opacity: 0;">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work1.png">
+                    <div class="layer">
+                        <h3>Restaurant Website</h3>
+                        <p>Authentic Indian vegetarian/non-vegetarian restaurant website</p>
+                        <a href="https://yogesh-rebari.github.io/Indian-Restaurant-Website/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.png">
+                    <div class="layer">
+                        <h3>Portfolio Website</h3>
+                        <p>Portfolio website designed and developed by me.</p>
+                        <a href="https://yogesh-rebari.github.io/My-Portfolio-Web/"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work5.png">
+                    <div class="layer">
+                        <h3>Indian Restaurant Website</h3>
+                        <p>The website connects you to the excellent Indian-Restaurant.</p>
+                        <a href="https://github.com/Yogesh-Rebari/Indian-Restaurant-Website"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work4.png">
+                    <div class="layer">
+                        <h3>Spam SMS Detection Model</h3>
+                        <p>Spam sms detection model using NLP.</p>
+                        <a href="https://github.com/Yogesh-Rebari/Spam-SMS-Detection"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.png">
+                    <div class="layer">
+                        <h3>Spam Email Detection Model</h3>
+                        <p>The model is able to detect the spam Emails.</p>
+                        <a href="https://github.com/Yogesh-Rebari/Spam-E-mail-Detection-using-Machine-Learning."><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work6.jpg">
+                    <div class="layer">
+                        <h3>Develop Website</h3>
+                        <p>The website connects you to the excellent collection</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="page3.html" class="btn btn2">See more</a>
+        </div>
+    </div>
+    <!-----------contact------------>
+    <div id="contact" style="opacity: 0;">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> www.yogeshrebari03@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91-76196 74090</p>
+                    <div class="social-icons">
+                        <a href="(your link)"></a><i
+                            class="fa-brands fa-instagram"></i></a>
+                        <a href="(your link)"></a><i
+                            class="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/yogesh-rebari-rj27"></a><i
+                            class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Yogesh-Rebari"></a><i
+                            class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/My_CV (2) (1).pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="5" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © 2024 Yogesh. I Love <i class="fa-solid fa-heart"></i> Building Cool Things.</p>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        // Mobile Menu Toggle
+        function toggleMenu() {
+            const menuBtn = document.querySelector('.menu-btn');
+            const navMenu = document.querySelector('#sidemenu');
+            menuBtn.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        }
+
+        // Close menu when clicking a nav link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('#sidemenu').classList.remove('active');
+                document.querySelector('.menu-btn').classList.remove('active');
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!e.target.closest('#sidemenu') && !e.target.closest('.menu-btn')) {
+                document.querySelector('#sidemenu').classList.remove('active');
+                document.querySelector('.menu-btn').classList.remove('active');
+            }
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwLI1BrwCMYZ7WaN5jZDz123eV2lZSilxnRIiIMfu-mF1r6OCZ4sOwpUa63lkjKHkCo/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+    <!-- Dark Mode Toggle Script -->
+    <script>
+        const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+        const currentTheme = localStorage.getItem('theme') ? localStorage.getItem('theme') : null;
+        const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+
+        function switchTheme(e) {
+            if (e.target.checked) {
+                document.body.classList.add('dark-mode');
+                localStorage.setItem('theme', 'dark'); // Save preference
+            } else {
+                document.body.classList.remove('dark-mode');
+                localStorage.setItem('theme', 'light'); // Save preference
+            }
+        }
+
+        if (currentTheme) {
+            document.body.classList.toggle('dark-mode', currentTheme === 'dark');
+            if (currentTheme === 'dark') {
+                toggleSwitch.checked = true;
+            }
+        } else if (prefersDarkScheme.matches) {
+            // If no preference saved, check OS preference
+            document.body.classList.add('dark-mode');
+            toggleSwitch.checked = true;
+            localStorage.setItem('theme', 'dark');
+        }
+
+
+        toggleSwitch.addEventListener('change', switchTheme, false);
+
+        // Optional: Listen for OS theme changes
+        prefersDarkScheme.addListener((e) => {
+            const currentSavedTheme = localStorage.getItem('theme');
+            // Only change if no user preference is explicitly saved
+            if (!currentSavedTheme) {
+                if(e.matches) {
+                    document.body.classList.add('dark-mode');
+                    toggleSwitch.checked = true;
+                } else {
+                    document.body.classList.remove('dark-mode');
+                    toggleSwitch.checked = false;
+                }
+            }
+        });
+
+    </script>
+    <!-- End Dark Mode Toggle Script -->
+
+    <!-- Resume Modal -->
+    <div id="resumeModal" class="resume-modal">
+        <span class="close-modal" onclick="closeResume()">&times;</span>
+        <div class="resume-modal-content">
+            <embed src="images/My_CV.pdf" type="application/pdf" width="100%" height="100%">
+        </div>
+    </div>
+
+    <script>
+    function openResume() {
+        document.getElementById("resumeModal").style.display = "block";
+        document.body.style.overflow = "hidden";
+    }
+
+    function closeResume() {
+        document.getElementById("resumeModal").style.display = "none";
+        document.body.style.overflow = "auto";
+    }
+
+    window.onclick = function(event) {
+        var modal = document.getElementById("resumeModal");
+        if (event.target == modal) {
+            closeResume();
+        }
+    }
+    </script>
+
+    <script>
+        // Loading Animation
+        document.addEventListener('DOMContentLoaded', function() {
+            // Simulate loading time (you can remove this setTimeout in production)
+            setTimeout(function() {
+                const loader = document.querySelector('.loader-wrapper');
+                const sections = document.querySelectorAll('#header, #about, #services, #portfolio, #contact');
+                
+                // Hide loader with fade out
+                loader.style.opacity = '0';
+                loader.style.visibility = 'hidden';
+                
+                // Show sections with sequential fade in
+                sections.forEach((section, index) => {
+                    setTimeout(() => {
+                        section.style.opacity = '1';
+                        section.style.transform = 'translateY(0)';
+                    }, index * 200); // 200ms delay between each section
+                });
+            }, 2000); // 2 seconds loading time
+        });
+
+        // Your existing scripts...
+    </script>
+
+</body>
+
+</html>
