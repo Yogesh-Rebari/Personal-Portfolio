@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website showcasing my journey as a Data Scientist and Machine Learning Engineer. Built with clean, efficient code and modern design principles.
 
-![Portfolio Preview](https://yogesh-rebari.github.io/Personal-Portfolio/)
+[Portfolio Preview](https://yogesh-rebari.github.io/Personal-Portfolio/)
 
 ## ✨ Features
 
