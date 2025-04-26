@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website showcasing my journey as a Data Scientist and Machine Learning Engineer. Built with clean, efficient code and modern design principles.
 
-![Portfolio Preview](images/work1.png.jpg)
+![Portfolio Preview](https://yogesh-rebari.github.io/Personal-Portfolio/)
 
 ## ✨ Features
 
@@ -34,31 +34,14 @@ A modern, responsive portfolio website showcasing my journey as a Data Scientist
 ## 🎯 Sections
 
 1. **Header**
-   - Professional introduction
-   - Role description
-   - Tech stack overview
-   - Key statistics
 
 2. **About**
-   - Personal background
-   - Skills overview
-   - Experience timeline
-   - Educational background
 
 3. **Services**
-   - Software Development
-   - Web Design
-   - AI & Machine Learning
-
+ 
 4. **Portfolio**
-   - Project showcase
-   - Live project links
-   - Project descriptions
-
+  
 5. **Contact**
-   - Contact form
-   - Social media links
-   - Resume download option
 
 ## 🚀 Performance Features
 
@@ -113,7 +96,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Contact
 
-- Email: www.yogeshrebari03@gmail.com
+- Email: www.yogeshrebari@gmail.com
 - LinkedIn: [Yogesh Rebari](https://www.linkedin.com/in/yogesh-rebari-rj27)
 - GitHub: [Yogesh-Rebari](https://github.com/Yogesh-Rebari)
 
